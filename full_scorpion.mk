@@ -13,21 +13,21 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Common castor Resources
-$(call inherit-product, device/sony/castor_windy/full_castor-common.mk)
+# Common scorpion Resources
+$(call inherit-product, device/sony/scorpion_windy/full_scorpion-common.mk)
 
 DEVICE_PACKAGE_OVERLAYS += \
-     device/sony/castor/overlay
+     device/sony/scorpion/overlay
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from castor device
-$(call inherit-product, device/sony/castor/castor.mk)
+# Inherit from scorpion device
+$(call inherit-product, device/sony/scorpion/scorpion.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := full_castor
-PRODUCT_DEVICE := castor
+PRODUCT_NAME := full_scorpion
+PRODUCT_DEVICE := scorpion
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony
-PRODUCT_MODEL := Xperia Z2 Tablet LTE
+PRODUCT_MODEL := Xperia Z3 Tablet Compact LTE

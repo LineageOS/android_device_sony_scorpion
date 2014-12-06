@@ -1,2 +1,2 @@
-android_device_sony_castor
+android_device_sony_scorpion
 ==========================

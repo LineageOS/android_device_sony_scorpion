@@ -14,17 +14,17 @@
 
 BOARD_HAVE_RADIO := true
 
-# Inherit the castor-common definitions
-$(call inherit-product, device/sony/castor_windy/castor-common.mk)
+# Inherit the scorpion-common definitions
+$(call inherit-product, device/sony/scorpion_windy/scorpion-common.mk)
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
-	frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
+    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
 
 # Audio
 PRODUCT_COPY_FILES += \
-   $(LOCAL_PATH)/audio/audio_policy.conf:system/etc/audio_policy.conf \
-   $(LOCAL_PATH)/audio/mixer_paths.xml:system/etc/mixer_paths.xml
+    $(LOCAL_PATH)/audio/audio_policy.conf:system/etc/audio_policy.conf \
+    $(LOCAL_PATH)/audio/mixer_paths.xml:system/etc/mixer_paths.xml
 
 # Include non-opensource parts
-$(call inherit-product, vendor/sony/castor/castor-vendor.mk)
+$(call inherit-product, vendor/sony/scorpion/scorpion-vendor.mk)

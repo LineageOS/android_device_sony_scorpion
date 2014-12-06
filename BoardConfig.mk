@@ -13,10 +13,10 @@
 # limitations under the License.
 
 # inherit from the common shinano definitions
-include device/sony/castor_windy/BoardConfigCommon.mk
+include device/sony/scorpion_windy/BoardConfigCommon.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := SGP521,SGP541,SGP551,castor
+TARGET_OTA_ASSERT_DEVICE := SGP621,SGP641,SGP651,scorpion
 
 # Kernel properties
-TARGET_KERNEL_CONFIG := cm_shinano_castor_defconfig
+TARGET_KERNEL_CONFIG := cm_shinano_scorpion_defconfig
