@@ -15,6 +15,8 @@
 # inherit from the common shinano definitions
 include device/sony/scorpion_windy/BoardConfigCommon.mk
 
+TARGET_SPECIFIC_HEADER_PATH += device/sony/scorpion/include
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := SGP621,SGP641,SGP651,scorpion
 
