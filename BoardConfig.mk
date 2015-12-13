@@ -19,6 +19,3 @@ TARGET_SPECIFIC_HEADER_PATH += device/sony/scorpion/include
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := SGP621,SGP641,SGP651,scorpion
-
-# Kernel properties
-TARGET_KERNEL_CONFIG := cm_shinano_scorpion_defconfig
